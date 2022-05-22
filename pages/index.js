@@ -26,60 +26,62 @@ export default function Home() {
     };
     const validate = (value, key) => {
         const lastLetter = value[value.length - 1];
-        if (key === "good") {
-            if (!bad.includes(lastLetter)) {
-                setGood(value);
-                setWarn(false);
-            } else {
-                setWarn(true);
+        if (lastLetter !== " ") {
+            if (key === "good") {
+                if (!bad.includes(lastLetter)) {
+                    setGood(value);
+                    setWarn(false);
+                } else {
+                    setWarn(true);
+                }
             }
-        }
-        if (key === "bad") {
-            if (!good.includes(lastLetter) && one !== lastLetter && two !== lastLetter && three !== lastLetter && four !== lastLetter && five !== lastLetter) {
-                setBad(value);
-                setWarn(false);
-            } else {
-                setWarn(true);
+            if (key === "bad") {
+                if (!good.includes(lastLetter) && one !== lastLetter && two !== lastLetter && three !== lastLetter && four !== lastLetter && five !== lastLetter) {
+                    setBad(value);
+                    setWarn(false);
+                } else {
+                    setWarn(true);
+                }
             }
-        }
-        if (key === "one") {
-            if (!bad.includes(lastLetter)) {
-                setOne(value);
-                setWarn(false);
-            } else {
-                setWarn(true);
+            if (key === "one") {
+                if (!bad.includes(lastLetter)) {
+                    setOne(value);
+                    setWarn(false);
+                } else {
+                    setWarn(true);
+                }
             }
-        }
-        if (key === "two") {
-            if (!bad.includes(lastLetter)) {
-                setTwo(value);
-                setWarn(false);
-            } else {
-                setWarn(true);
+            if (key === "two") {
+                if (!bad.includes(lastLetter)) {
+                    setTwo(value);
+                    setWarn(false);
+                } else {
+                    setWarn(true);
+                }
             }
-        }
-        if (key === "three") {
-            if (!bad.includes(lastLetter)) {
-                setThree(value);
-                setWarn(false);
-            } else {
-                setWarn(true);
+            if (key === "three") {
+                if (!bad.includes(lastLetter)) {
+                    setThree(value);
+                    setWarn(false);
+                } else {
+                    setWarn(true);
+                }
             }
-        }
-        if (key === "four") {
-            if (!bad.includes(lastLetter)) {
-                setFour(value);
-                setWarn(false);
-            } else {
-                setWarn(true);
+            if (key === "four") {
+                if (!bad.includes(lastLetter)) {
+                    setFour(value);
+                    setWarn(false);
+                } else {
+                    setWarn(true);
+                }
             }
-        }
-        if (key === "five") {
-            if (!bad.includes(lastLetter)) {
-                setFive(value);
-                setWarn(false);
-            } else {
-                setWarn(true);
+            if (key === "five") {
+                if (!bad.includes(lastLetter)) {
+                    setFive(value);
+                    setWarn(false);
+                } else {
+                    setWarn(true);
+                }
             }
         }
     };
