@@ -128,7 +128,7 @@ export default function Home() {
                         className="w-12 h-12 text-center text-3xl border-[3px] border-yellow-500"
                     />
                 </div>
-                <div className="w-fit h-8 text-center mx-auto">{warn && <p className="text-yellow-500">Good letters and bad letters cannot be same!!</p>}</div>
+                <div className="w-fit h-8 text-center mx-auto">{warn && <p className="text-yellow-500 md:text-md text-sm">Good letters and bad letters cannot be same!!</p>}</div>
                 <button
                     onClick={filterWords}
                     className="p-2 px-4 bg-gray-800 text-white border-2 border-transparent hover:border-yellow-500 hover:bg-gray-700 hover:text-yellow-500 transition-all"
